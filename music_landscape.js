@@ -9,7 +9,7 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
 
   let numStripes = height / stripeWidth;
   for(let i=0; i<numStripes; i=i+2) {
-    let cury = map(i, 0, numStripes-1, 0, height);
+    let cury = map(i, 0, numStripes-1, 0, height); //ooooo
     rect(0, cury, width, stripeWidth);
   }
 
