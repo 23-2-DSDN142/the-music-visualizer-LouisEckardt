@@ -5,7 +5,17 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   textFont('Helvetica'); // please use CSS safe fonts
   rectMode(CENTER)
   textSize(24);
-  ellipse (width/2, height/2, 50+bass,50+bass)
+  ellipse (width/2, height/2, 50+bass,50+bass) 
+  var ballSize = 200; 
+
+  var drumHeight = map(drum, 0, 100, 0, height);
+  fill(244,161,39); // orange
+  ellipse(width/2,drumHeight, ballSize);
+
+     // display "words"
+     textAlign(CENTER);
+     textSize(vocal);
+     text(words, width/2, height/3);
 
   //  let bar_spacing = height / 10;
   //  let bar_height = width / 12;
@@ -37,8 +47,5 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   //  text("other", bar_pos_x, height / 2 + 4 * bar_spacing + 8);
   //  fill(255, 255, 0);
  
-  //  // display "words"
-  //  textAlign(CENTER);
-  //  textSize(vocal);
-  //  text(words, width/2, height/3);
+
 }
