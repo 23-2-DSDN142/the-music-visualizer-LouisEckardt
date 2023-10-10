@@ -7,7 +7,8 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   textSize(24);
   ellipse (width/2, height/2, 50+bass,50+bass) 
   var ballSize = 200; 
-
+ 
+  
   var drumHeight = map(drum, 0, 100, 0, height);
   fill(244,161,39); // orange
   ellipse(width/2,drumHeight, ballSize);
@@ -16,6 +17,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
      textAlign(CENTER);
      textSize(vocal);
      text(words, width/2, height/3);
+     
 
   //  let bar_spacing = height / 10;
   //  let bar_height = width / 12;
