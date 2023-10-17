@@ -13,7 +13,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   let green = color(45, 252, 3);
   let mapForColorLerp = map(vocal, 0, 100, 0, 1);
   let mappedColour = lerpColor(blue, green, mapForColorLerp);
-  let rectSize = map(drum, 20, 300, 10, 100);
+  let rectSize = map(drum, 0, 100, 100, 100,);
   let circleYOffset = map(other, 0, 100, -100, 100);
  
   fill(255) // circle to stay white
