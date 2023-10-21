@@ -14,7 +14,7 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
   }
   background(255);
 
-var VocalFrame = int(map(vocal, 0, 100, 0, 2));
+var VocalFrame = int(map(vocal, 0, 100, 0, 1));
 push();
 scale(0.2);
 image(Bunny[VocalFrame], width/2, height/2)
