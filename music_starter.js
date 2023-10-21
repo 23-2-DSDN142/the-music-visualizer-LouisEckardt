@@ -1,7 +1,7 @@
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   if(bass < 20){
-  background(0, 128, 0)}
+  background(255, 0, 0)}
   else{
     background(200)
 
