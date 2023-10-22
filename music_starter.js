@@ -1,9 +1,15 @@
+var movingY =720; 
+var speed= 1;
+var randomhue1;
+var seed = 90;
+
 let firstRun = true
 
 let Bunny = [];
 
+
 function draw_one_frame(words, vocal, drum, bass, other,counter) {
-  
+
   if(firstRun)  {
     rectMode(CENTER);
     Bunny.push(loadImage('bunnyImage_0.png'));
@@ -31,6 +37,18 @@ scale(0.2);
 image(Bunny[VocalFrame], width/2, height/2)
 pop();
 
+function draw_one_frame(words, vocal, drum, bass, other,counter) {
+  colourMode(HSB, 100);
+  background(0, 0, 100)
 
+  noStroke()
+  randomHue1 =random(100);
+
+
+
+
+
+
+}
 
   }
