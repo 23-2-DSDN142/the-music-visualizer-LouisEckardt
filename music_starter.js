@@ -6,8 +6,12 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
   if(firstRun)  {
     rectMode(CENTER);
     Bunny.push(loadImage('bunnyImage_0.png'));
+    Bunny.push(loadImage('bunnyImage_0.png'));
+    Bunny.push(loadImage('bunnyImage_0.png'));
+    Bunny.push(loadImage('bunnyImage_0.png'));
+
     Bunny.push(loadImage('bunnyImage_1.png'));
-    
+
 
     
     fisrtRun = false
